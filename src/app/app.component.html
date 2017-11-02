@@ -5,10 +5,10 @@
         <div class="container-fluid">
           <div class="navbar-header">
             <a class="navbar-brand">{{name}} {{surname}}</a>
-            <a class="navbar-brand" href="#" (click)="onNav('about')">About</a>
-            <a class="navbar-brand" href="#" (click)="onNav('edu')">Education</a>
-            <a class="navbar-brand" href="#" (click)="onNav('work')">Work</a>
-            <a class="navbar-brand" href="#" (click)="onNav('skills')">Skills</a>            
+            <a class="navbar-brand" routerLink="/about" (click)="onNav('about')">About</a>
+            <a class="navbar-brand" routerLink="/edu" (click)="onNav('edu')">Education</a>
+            <a class="navbar-brand" routerLink="/work" (click)="onNav('work')">Work</a>
+            <a class="navbar-brand" routerLink="/skills" (click)="onNav('skills')">Skills</a>            
           </div>
         </div>
       </nav>
