@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand">{{name}} {{surname}}</a>
+            <a class="navbar-brand" href="#" (click)="onNav('about')">About</a>
+            <a class="navbar-brand" href="#" (click)="onNav('edu')">Education</a>
+            <a class="navbar-brand" href="#" (click)="onNav('work')">Work</a>
+            <a class="navbar-brand" href="#" (click)="onNav('skills')">Skills</a>            
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <app-about *ngIf="currentTab === 'about'"></app-about>
+  <app-education *ngIf="currentTab === 'edu'"></app-education>  
+  <app-work *ngIf="currentTab === 'work'"></app-work>
+  <app-skills *ngIf="currentTab === 'skills'"></app-skills>
+
+</div>
+<div class="footer">
+    <small>Copyright © 2017 All Rights Reserved</small>
+</div>
