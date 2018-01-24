@@ -7,11 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
-  name = "Andrej";
-  surname = "Godec";
-
-  currentTab = 'about';
-  onNav(tab: string){
-      this.currentTab = tab;
-  }
-;}
+  name = 'Andrej';
+  surname = 'Godec';
+}

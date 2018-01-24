@@ -15,6 +15,7 @@ const appRoutes: Routes = [
   { path: 'work', component: WorkComponent },
   { path: 'about', component: AboutComponent },
   { path: 'skills', component: SkillsComponent },
+  { path: '**', redirectTo: '/about'}
 ];
 
 @NgModule({

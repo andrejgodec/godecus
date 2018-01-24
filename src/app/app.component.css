@@ -1,3 +1,14 @@
+.nav>li>a {
+   position: initial;
+   display: initial;
+   padding: initial;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+  color: #0ce3ac;
+  background-color: initial; 
+}
+
 .footer {
     right: 0;
     bottom: 0;
