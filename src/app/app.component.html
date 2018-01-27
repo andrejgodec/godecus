@@ -1,30 +1,30 @@
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-      <nav class="navbar navbar-default">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container-fluid">
           <div class="navbar-header">
             <a class="navbar-brand">{{name}} {{surname}}</a>
           </div>
           <ul class="nav navbar-nav">
             <li class="navbar-brand" routerLinkActive="active">
-              <a routerLink="/about">About</a>
+              <a class="nav-link" routerLink="/about">About</a>
             </li>
             <li class="navbar-brand" routerLinkActive="active">
-              <a routerLink="/edu">Education</a>
+              <a class="nav-link" routerLink="/edu">Education</a>
             </li>
             <li class="navbar-brand" routerLinkActive="active">
-              <a routerLink="/work">Work</a>
+              <a class="nav-link" routerLink="/work">Work</a>
             </li>
             <li class="navbar-brand" routerLinkActive="active">
-              <a routerLink="/skills">Skills</a>
+              <a class="nav-link" routerLink="/skills">Skills</a>
             </li>
           </ul>
         </div>
       </nav>
+      <router-outlet></router-outlet>
     </div>
   </div>
-  <router-outlet></router-outlet>
   <div class="footer">
     <small>Copyright © 2017-2018 All Rights Reserved</small>
   </div>

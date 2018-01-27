@@ -1,14 +1,15 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule, Routes } from '@angular/router';
+
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
 import { EducationComponent } from './education/education.component';
 import { WorkComponent } from './work/work.component';
 import { SkillsComponent } from './skills/skills.component';
-import { AngularFontAwesomeModule } from 'angular-font-awesome/angular-font-awesome';
-import { RouterModule, Routes } from '@angular/router';
 
 const appRoutes: Routes = [
   { path: 'edu', component: EducationComponent },
@@ -27,9 +28,9 @@ const appRoutes: Routes = [
     SkillsComponent
   ],
   imports: [
+    AngularFontAwesomeModule,
     BrowserModule,
     CommonModule,
-    AngularFontAwesomeModule   ,
     RouterModule.forRoot(appRoutes)
   ],
   providers: [],
