@@ -10,6 +10,8 @@ import { AboutComponent } from './about/about.component';
 import { EducationComponent } from './education/education.component';
 import { WorkComponent } from './work/work.component';
 import { SkillsComponent } from './skills/skills.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 const appRoutes: Routes = [
   { path: 'edu', component: EducationComponent },
@@ -31,7 +33,8 @@ const appRoutes: Routes = [
     AngularFontAwesomeModule,
     BrowserModule,
     CommonModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent]

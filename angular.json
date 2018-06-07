@@ -19,7 +19,8 @@
             "assets": [
               "src/assets",
               "src/favicon.ico",
-              "src/assets/profile.jpg"
+              "src/assets/profile.jpg",
+              "src/manifest.json"
             ],
             "styles": [
               "src/dist/css/darkly.bootstrap.min.css",
@@ -44,7 +45,8 @@
                   "replace": "src/environments/environment.ts",
                   "with": "src/environments/environment.prod.ts"
                 }
-              ]
+              ],
+              "serviceWorker": true
             }
           }
         },
@@ -81,7 +83,8 @@
             "assets": [
               "src/assets",
               "src/favicon.ico",
-              "src/profile.jpg"
+              "src/profile.jpg",
+              "src/manifest.json"
             ]
           }
         },
