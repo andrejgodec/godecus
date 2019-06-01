@@ -17,7 +17,7 @@ const appRoutes: Routes = [
   { path: 'edu', component: EducationComponent },
   { path: 'work', component: WorkComponent },
   { path: 'about', component: AboutComponent },
-  { path: 'skills', component: SkillsComponent },
+  // { path: 'skills', component: SkillsComponent },
   { path: '**', redirectTo: '/about'}
 ];
 

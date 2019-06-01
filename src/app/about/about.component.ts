@@ -10,7 +10,7 @@ export class AboutComponent implements OnInit {
   surname = 'Godec';
   email = 'andrej.godec0@gmail.com';
   location = 'Izola, Slovenia';
-  position = 'Software engineer';
+  position = 'IBMer';
 
   constructor() { }
 
