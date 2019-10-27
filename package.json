@@ -23,13 +23,13 @@
     "@angular/platform-server": "6.0.1",
     "@angular/pwa": "^0.6.8",
     "@angular/router": "6.0.1",
+    "@angular/service-worker": "6.0.1",
     "angular-font-awesome": "^3.1.2",
     "bootstrap": "^4.0.0",
     "core-js": "^2.4.1",
     "font-awesome": "^4.7.0",
-    "rxjs": "^6.1.0",
-    "zone.js": "^0.8.26",
-    "@angular/service-worker": "6.0.1"
+    "rxjs": "^6.0.0",
+    "zone.js": "^0.8.26"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^0.6.8",
