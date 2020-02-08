@@ -9,7 +9,6 @@ import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
 import { EducationComponent } from './education/education.component';
 import { WorkComponent } from './work/work.component';
-import { SkillsComponent } from './skills/skills.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 
@@ -26,8 +25,7 @@ const appRoutes: Routes = [
     AppComponent,
     AboutComponent,
     EducationComponent,
-    WorkComponent,
-    SkillsComponent
+    WorkComponent
   ],
   imports: [
     AngularFontAwesomeModule,
