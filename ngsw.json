@@ -1,18 +1,18 @@
 {
   "configVersion": 1,
-  "index": "https://andrejgodec.github.io/godecus/index.html",
+  "index": "/index.html",
   "assetGroups": [
     {
       "name": "app",
       "installMode": "prefetch",
       "updateMode": "prefetch",
       "urls": [
-        "https://andrejgodec.github.io/godecus/favicon.ico",
-        "https://andrejgodec.github.io/godecus/index.html",
-        "https://andrejgodec.github.io/godecus/main.00afd61ca2b0496b622c.js",
-        "https://andrejgodec.github.io/godecus/polyfills.a935f2c8bc13ea998ff0.js",
-        "https://andrejgodec.github.io/godecus/runtime.a66f828dca56eeb90e02.js",
-        "https://andrejgodec.github.io/godecus/styles.e9c4f4c47c815834f782.css"
+        "/favicon.ico",
+        "/index.html",
+        "/main.00afd61ca2b0496b622c.js",
+        "/polyfills.a935f2c8bc13ea998ff0.js",
+        "/runtime.a66f828dca56eeb90e02.js",
+        "/styles.e9c4f4c47c815834f782.css"
       ],
       "patterns": []
     },
@@ -21,36 +21,36 @@
       "installMode": "lazy",
       "updateMode": "prefetch",
       "urls": [
-        "https://andrejgodec.github.io/godecus/assets/icons/icon-128x128.png",
-        "https://andrejgodec.github.io/godecus/assets/icons/icon-144x144.png",
-        "https://andrejgodec.github.io/godecus/assets/icons/icon-152x152.png",
-        "https://andrejgodec.github.io/godecus/assets/icons/icon-192x192.png",
-        "https://andrejgodec.github.io/godecus/assets/icons/icon-384x384.png",
-        "https://andrejgodec.github.io/godecus/assets/icons/icon-512x512.png",
-        "https://andrejgodec.github.io/godecus/assets/icons/icon-72x72.png",
-        "https://andrejgodec.github.io/godecus/assets/icons/icon-96x96.png",
-        "https://andrejgodec.github.io/godecus/assets/profile.jpg"
+        "/assets/icons/icon-128x128.png",
+        "/assets/icons/icon-144x144.png",
+        "/assets/icons/icon-152x152.png",
+        "/assets/icons/icon-192x192.png",
+        "/assets/icons/icon-384x384.png",
+        "/assets/icons/icon-512x512.png",
+        "/assets/icons/icon-72x72.png",
+        "/assets/icons/icon-96x96.png",
+        "/assets/profile.jpg"
       ],
       "patterns": []
     }
   ],
   "dataGroups": [],
   "hashTable": {
-    "https://andrejgodec.github.io/godecus/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
-    "https://andrejgodec.github.io/godecus/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
-    "https://andrejgodec.github.io/godecus/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
-    "https://andrejgodec.github.io/godecus/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
-    "https://andrejgodec.github.io/godecus/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
-    "https://andrejgodec.github.io/godecus/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
-    "https://andrejgodec.github.io/godecus/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
-    "https://andrejgodec.github.io/godecus/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
-    "https://andrejgodec.github.io/godecus/assets/profile.jpg": "06766b40cea8715152938a6517fc143ff606d1a6",
-    "https://andrejgodec.github.io/godecus/favicon.ico": "30e4651b9a61041af2cd9e0560aee3ebb9d923f0",
-    "https://andrejgodec.github.io/godecus/index.html": "1321b024dc35cc8e7ada6e899c166ef9e667191d",
-    "https://andrejgodec.github.io/godecus/main.00afd61ca2b0496b622c.js": "7a3445f41aba017f72b4276d11d65c03317bd78e",
-    "https://andrejgodec.github.io/godecus/polyfills.a935f2c8bc13ea998ff0.js": "b72937c5890dd4d2eb1a5a3be4d2adbc0131aa16",
-    "https://andrejgodec.github.io/godecus/runtime.a66f828dca56eeb90e02.js": "078e320cc6fdaf355836c3b1c52b059cdd33fc7e",
-    "https://andrejgodec.github.io/godecus/styles.e9c4f4c47c815834f782.css": "14c272e34de388b4750f87eb140d687a85f9752d"
+    "/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/assets/profile.jpg": "06766b40cea8715152938a6517fc143ff606d1a6",
+    "/favicon.ico": "30e4651b9a61041af2cd9e0560aee3ebb9d923f0",
+    "/index.html": "97fff125519aa151c4ea1e6e2ce84e96c7476b8f",
+    "/main.00afd61ca2b0496b622c.js": "7a3445f41aba017f72b4276d11d65c03317bd78e",
+    "/polyfills.a935f2c8bc13ea998ff0.js": "b72937c5890dd4d2eb1a5a3be4d2adbc0131aa16",
+    "/runtime.a66f828dca56eeb90e02.js": "078e320cc6fdaf355836c3b1c52b059cdd33fc7e",
+    "/styles.e9c4f4c47c815834f782.css": "14c272e34de388b4750f87eb140d687a85f9752d"
   },
   "navigationUrls": [
     {
