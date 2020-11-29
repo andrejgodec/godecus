@@ -9,4 +9,5 @@ export class AppComponent {
   title = 'app';
   name = 'Andrej';
   surname = 'Godec';
+  year = new Date().getFullYear();
 }
