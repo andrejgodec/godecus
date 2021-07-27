@@ -31,7 +31,7 @@ const appRoutes: Routes = [
     AngularFontAwesomeModule,
     BrowserModule,
     CommonModule,
-    RouterModule.forRoot(appRoutes),
+    RouterModule.forRoot(appRoutes, { relativeLinkResolution: 'legacy' }),
     ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
