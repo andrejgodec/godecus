@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
 import { EducationComponent } from './education/education.component';
 import { WorkComponent } from './work/work.component';
+import { CvComponent } from './cv/cv.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 
@@ -16,6 +17,7 @@ const appRoutes: Routes = [
   { path: 'edu', component: EducationComponent },
   { path: 'work', component: WorkComponent },
   { path: 'about', component: AboutComponent },
+  { path: 'cv', component: CvComponent },
   // { path: 'skills', component: SkillsComponent },
   { path: '**', redirectTo: '/about'}
 ];
@@ -25,7 +27,8 @@ const appRoutes: Routes = [
     AppComponent,
     AboutComponent,
     EducationComponent,
-    WorkComponent
+    WorkComponent,
+    CvComponent
   ],
   imports: [
     AngularFontAwesomeModule,
