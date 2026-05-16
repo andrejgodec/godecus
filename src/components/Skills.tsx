@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
-import { Trophy, FileText, BadgeCheck, ExternalLink } from 'lucide-react'
-import { skills, achievements, publications, certifications } from '../data/cv'
+import { Trophy, FileText, BadgeCheck, ExternalLink, Languages } from 'lucide-react'
+import { skills, achievements, publications, certifications, languages } from '../data/cv'
 
 export default function Skills() {
   return (
@@ -36,6 +36,35 @@ export default function Skills() {
               </div>
             </motion.div>
           ))}
+        </div>
+
+        {/* Languages */}
+        <div className="mb-16">
+          <div className="flex items-center gap-2 mb-6">
+            <Languages size={18} className="text-[var(--color-accent)]" />
+            <h3 className="font-[family-name:var(--font-display)] text-lg font-semibold">Languages</h3>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {languages.map((l, i) => (
+              <motion.div
+                key={l.language}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.05 }}
+                className="bg-[var(--color-surface)] border border-white/5 rounded-xl p-4"
+              >
+                <p className="font-semibold text-white mb-1">{l.language}</p>
+                <p className="text-[var(--color-accent)] text-xs mb-3">{l.note}</p>
+                <div className="grid grid-cols-2 gap-x-3 gap-y-1 text-xs text-[var(--color-muted)]">
+                  <span>Listening</span><span className="text-gray-300">{l.listening}</span>
+                  <span>Reading</span><span className="text-gray-300">{l.reading}</span>
+                  <span>Speaking</span><span className="text-gray-300">{l.spoken}</span>
+                  <span>Writing</span><span className="text-gray-300">{l.written}</span>
+                </div>
+              </motion.div>
+            ))}
+          </div>
         </div>
 
         <div className="grid md:grid-cols-3 gap-6">

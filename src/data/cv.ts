@@ -2,7 +2,7 @@ export const profile = {
   name: 'Andrej Godec',
   title: 'Application Consultant',
   location: 'Izola, Slovenia',
-  email: 'andrej.godec0@gmail.com',
+  email: 'andrej@godec.us',
   linkedin: 'https://www.linkedin.com/in/andrejgodec/',
   github: 'https://github.com/andrejgodec',
 }
@@ -15,7 +15,7 @@ export const work = [
     company: 'IBM',
     period: '2019 – Present',
     description: 'Consulting on RedHat OpenShift and IBM Cloud Pak For Integration. Designing and implementing enterprise integration solutions for clients across financial services and telecommunications.',
-    tags: ['OpenShift', 'IBM CP4I', 'MQ', 'ACE', 'Kubernetes', 'DevOps'],
+    tags: ['OpenShift', 'IBM CP4I', 'DataPower', 'API Connect', 'Kubernetes', 'DevOps'],
   },
   {
     title: 'Frontend Developer',
@@ -59,11 +59,18 @@ export const education = [
 
 export const skills: Record<string, string[]> = {
   'Cloud & DevOps': ['IBM Cloud Pak for Integration', 'RedHat OpenShift', 'Kubernetes', 'Docker', 'CI/CD', 'Helm'],
-  Frontend: ['React', 'Angular', 'VueJS', 'TypeScript', 'Tailwind CSS'],
-  Backend: ['Node.js', 'C#', '.NET', 'REST APIs'],
-  Tools: ['Git', 'VS Code', 'Jira', 'Confluence'],
-  Interests: ['Cloud Architecture', 'DevOps', 'Open Source'],
+  Integration: ['DataPower', 'API Connect', 'Event Streams', 'REST APIs', 'Middleware'],
+  Programming: ['JavaScript', 'TypeScript', 'Bash Scripting', 'C#', 'Node.js', 'SQL'],
+  Tools: ['Git', 'VS Code', 'Jira', 'Confluence', 'ArgoCD', 'Ansible'],
+  Interests: ['Cloud Architecture', 'DevOps', 'Open Source', 'Automation'],
 }
+
+export const languages = [
+  { language: 'Slovenian', listening: 'C2', reading: 'C2', spoken: 'C2', written: 'C2', note: 'Native' },
+  { language: 'English', listening: 'C1', reading: 'C1', spoken: 'C1', written: 'C1', note: 'Professional' },
+  { language: 'Italian', listening: 'B1', reading: 'B1', spoken: 'B1', written: 'A2', note: 'Conversational' },
+  { language: 'Croatian', listening: 'B2', reading: 'B2', spoken: 'B2', written: 'B1', note: 'Conversational' },
+]
 
 export const achievements = [
   { title: 'PRIMATIJADA 2013', description: '1st place in programming competition' },
