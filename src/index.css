@@ -1,0 +1,159 @@
+@import "tailwindcss";
+
+@theme {
+  --color-base: #0a0a0a;
+  --color-surface: #141414;
+  --color-surface-2: #1e1e1e;
+  --color-accent: #00d4aa;
+  --color-accent-dim: #00d4aa26;
+  --color-muted: #6b7280;
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-display: 'Space Grotesk', system-ui, sans-serif;
+}
+
+body {
+  background-color: var(--color-base);
+  color: white;
+  font-family: var(--font-sans);
+}
+
+@keyframes bubble-up {
+  0% { transform: translateY(0) scale(1); opacity: 0.6; }
+  100% { transform: translateY(-100vh) scale(1.2); opacity: 0; }
+}
+@keyframes wobble {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(20px); }
+}
+
+/* Europass print layout — screen: hidden; print: shown */
+.europass-root { display: none; }
+
+@media print {
+  /* Hide the website UI, keep europass-root visible */
+  nav, main, footer { display: none !important; }
+
+  /* Show only the Europass CV */
+  .europass-root {
+    display: block !important;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9.5pt;
+    color: #1a1a1a;
+    background: white;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  /* Header bar */
+  .europass-header {
+    background: #003399;
+    color: white;
+    padding: 8px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  .europass-header-left {
+    display: flex;
+    flex-direction: column;
+  }
+  .europass-eu-stars { font-size: 7pt; letter-spacing: 3px; color: #ffcc00; }
+  .europass-eu-stars-right { font-size: 7pt; letter-spacing: 3px; color: #ffcc00; }
+  .europass-label {
+    font-size: 18pt;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 2px;
+  }
+
+  /* Personal info */
+  .europass-personal {
+    display: flex;
+    gap: 20px;
+    padding: 0 20px 16px;
+    border-bottom: 2px solid #003399;
+    margin-bottom: 12px;
+  }
+  .europass-photo-col { flex-shrink: 0; }
+  .europass-photo {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border: 1px solid #ccc;
+  }
+  .europass-info-col { flex: 1; }
+  .europass-name {
+    font-size: 16pt;
+    font-weight: bold;
+    color: #003399;
+    margin: 0 0 8px;
+  }
+  .europass-info-table { border-collapse: collapse; font-size: 8.5pt; }
+  .europass-info-table td { padding: 1.5px 8px 1.5px 0; vertical-align: top; }
+  .europass-info-label { color: #003399; font-weight: bold; min-width: 70px; }
+
+  /* Sections */
+  .europass-section { margin: 0 20px 12px; page-break-inside: avoid; }
+  .europass-section-title {
+    background: #003399;
+    color: white;
+    font-size: 9pt;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 3px 8px;
+    margin-bottom: 8px;
+  }
+  .europass-section-body { padding: 0 4px; }
+
+  /* Entries (work / education) */
+  .europass-entry { display: flex; gap: 16px; }
+  .europass-entry-mt { margin-top: 10px; padding-top: 10px; border-top: 1px solid #e5e5e5; }
+  .europass-entry-meta { min-width: 90px; color: #555; font-size: 8.5pt; }
+  .europass-period { font-style: italic; }
+  .europass-entry-content { flex: 1; }
+  .europass-entry-title { font-weight: bold; color: #1a1a1a; margin-bottom: 1px; }
+  .europass-entry-subtitle { color: #003399; font-size: 8.5pt; margin-bottom: 2px; }
+  .europass-entry-org { color: #555; font-size: 8pt; margin-bottom: 3px; }
+  .europass-entry-desc { font-size: 8.5pt; color: #333; margin: 3px 0; line-height: 1.4; }
+  .europass-tags { display: flex; flex-wrap: wrap; gap: 3px; margin-top: 3px; }
+  .europass-tag {
+    font-size: 7.5pt;
+    padding: 1px 5px;
+    border: 1px solid #003399;
+    color: #003399;
+    border-radius: 2px;
+  }
+
+  /* Skills */
+  .europass-skill-row { display: flex; gap: 12px; margin-bottom: 4px; font-size: 8.5pt; }
+  .europass-skill-cat { min-width: 100px; font-weight: bold; color: #003399; }
+  .europass-skill-tags { color: #333; }
+
+  /* Achievements / publications */
+  .europass-misc-row { display: flex; gap: 12px; margin-bottom: 4px; font-size: 8.5pt; }
+  .europass-misc-title { min-width: 150px; font-weight: bold; color: #333; }
+  .europass-misc-desc { color: #555; }
+
+  /* Language table */
+  .europass-lang-table { border-collapse: collapse; width: 100%; font-size: 8pt; margin-bottom: 4px; }
+  .europass-lang-table th { background: #e8edf8; color: #003399; font-weight: bold; text-align: center; padding: 3px 6px; border: 1px solid #ccd; }
+  .europass-lang-subhead td { background: #f0f3fa; color: #555; font-size: 7.5pt; text-align: center; padding: 2px 6px; border: 1px solid #ccd; }
+  .europass-lang-table tbody tr td { border: 1px solid #ccd; padding: 3px 6px; text-align: center; }
+  .europass-lang-name { text-align: left !important; font-weight: bold; color: #1a1a1a; }
+  .europass-lang-note { font-weight: normal; font-style: italic; color: #777; font-size: 7.5pt; }
+  .europass-lang-legend { font-size: 7pt; color: #888; margin-top: 3px; font-style: italic; }
+
+  /* Footer */
+  .europass-footer {
+    margin-top: 16px;
+    padding: 6px 20px;
+    border-top: 1px solid #003399;
+    font-size: 7.5pt;
+    color: #777;
+    text-align: center;
+  }
+}
